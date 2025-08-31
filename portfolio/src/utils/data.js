@@ -209,7 +209,7 @@ export const CERTIFICATES = [
     name: "Crash Course On Python",
     organization: "Coursera",
     description: "Python Basic Certificate",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/verify/AUYPD55DCWE5",
   },
 ];
 

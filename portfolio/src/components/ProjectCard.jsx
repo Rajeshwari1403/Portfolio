@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = ({imgUrl, title, tags}) => {
+const ProjectCard = ({ imgUrl, title, tags, link, deployed_link }) => {
   return (
     <div className='h-full bg-white rounded-xl overflow-hidden shadow-md mx-2'>
       <img src={imgUrl} alt={title} className='w-full h-72 md:h-80 object-cover' />
@@ -17,6 +17,28 @@ const ProjectCard = ({imgUrl, title, tags}) => {
               {tag}
             </span>
           ))}
+        </div>
+
+        {/* Links Section */}
+        <div className="mt-4 flex flex-col gap-2">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-600"
+          >
+            🔗 GitHub
+          </a>
+          {deployed_link && (
+            <a
+              href={deployed_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-green-600"
+            >
+              🌐 Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
