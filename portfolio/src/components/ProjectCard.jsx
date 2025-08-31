@@ -20,12 +20,12 @@ const ProjectCard = ({ imgUrl, title, tags, link, deployed_link }) => {
         </div>
 
         {/* Links Section */}
-        <div className="mt-4 flex flex-col gap-2">
+        <div className="mt-4 flex justify-between items-center">
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-blue-600"
+            className="text-sm text-blue-600 font-semibold hover:font-semibold hover:text-primary"
           >
             🔗 GitHub
           </a>
@@ -34,12 +34,13 @@ const ProjectCard = ({ imgUrl, title, tags, link, deployed_link }) => {
               href={deployed_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-green-600"
+              className="text-sm text-primary font-semibold hover:font-semibold hover:text-[#033874ff]"
             >
               🌐 Live Demo
             </a>
           )}
         </div>
+
       </div>
     </div>
   )

@@ -1,30 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import icon_1 from '../assets/Images/icon.jpg'
 import { STATS } from '../utils/data'
 import StatInfoCard from '../components/StatInforCard'
 
 const Hero = () => {
+  const [showConfirm, setShowConfirm] = useState(false);
+
+  const handleDownloadClick = (e) => {
+    e.preventDefault(); // prevent direct navigation
+    setShowConfirm(true); // show popup
+  };
+
+  const confirmDownload = () => {
+    setShowConfirm(false);
+    // trigger the actual download
+    window.location.href = "http://localhost:5000/download-resume";
+  };
+
   return (
     <section id='hero' className='container mx-auto max-w-7xl px-8'>
       <div className='flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]'>
         <div className='order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0'>
           <h3 className='text-xl lg:text-2xl font-medium text-black'>👋 Hi, I'm Rajeshwari R</h3>
-          <h1 className='w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-primary bg-clip-text text-transparent'>Building web apps</h1>
+          <h1 className='w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-primary bg-clip-text text-transparent'>
+            Building web apps
+          </h1>
           <p className='w-full lg:w-[500px] text-sm lg:text-base mt-4'>
             I'm passionate about improving my skills
           </p>
           <div className='flex justify-center lg:justify-start gap-4 md:gap-8 mt-6'>
             <button className='flex-1 md:flex-none action-btn-outline btn-scale-anim'>View My Work</button>
-            <a 
-              href="http://localhost:5000/download-resume" 
-              className="flex-1 md:flex-none action-btn btn-scale-anim pt-4"
+            
+            {/* Instead of direct link, show popup */}
+            <button 
+              onClick={handleDownloadClick} 
+              className="flex-1 md:flex-none action-btn btn-scale-anim"
             >
-            Download Resume
-            </a>
-
+              Download Resume
+            </button>
           </div>
         </div>
         
+        {/* Profile Image Section */}
         <div className='w-[250px] md:w-[320px] h-[280px] md:h-[358px] bg-blue-100/100 rounded-3xl relative order-1 lg:order-2'>
           <img src={icon_1} alt='Profile_Pic' className='profile-pic' />
           <img src={icon_1} alt='Icon 1' className='icon-img -left-10 bottom-20 rotate-[1.75deg]' />
@@ -39,6 +56,29 @@ const Hero = () => {
           <StatInfoCard key={item.id} count={item.count} label={item.label} />
         ))}
       </div>
+
+      {/* Confirmation Popup */}
+      {showConfirm && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-xl shadow-lg text-center w-[300px]">
+            <h2 className="text-lg font-semibold mb-4">Do you want to download the resume?</h2>
+            <div className="flex justify-center gap-4">
+              <button 
+                onClick={confirmDownload} 
+                className="bg-primary hover:bg-white hover:text-primary hover:border hover:border-primary hover:font-semibold hover:border-2 text-white px-4 py-2 rounded-lg"
+              >
+                Yes
+              </button>
+              <button 
+                onClick={() => setShowConfirm(false)} 
+                className="bg-gray-300 hover:bg-black hover:text-white border border-black border-2 px-4 py-2 rounded-lg"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
