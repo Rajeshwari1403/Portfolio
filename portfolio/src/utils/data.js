@@ -18,20 +18,22 @@ import {
 import { FaGitAlt, FaDribbble } from 'react-icons/fa';
 //import { MdGroup3 } from 'react-icons/md';
 
-import Image_1 from '../assets/Images/Image1.jpg';
-import Image_2 from '../assets/Images/Image2.jpg';
-import Image_3 from '../assets/Images/Image3.jpg';
-import Image_4 from '../assets/Images/Image4.jpg';
-import Image_5 from '../assets/Images/Image5.jpg';
-import Image_6 from '../assets/Images/Image6.jpg';
+import travel from '../assets/Images/Travel.jpg';
+import weather from '../assets/Images/Weather.png';
+import football from '../assets/Images/Football_Match_Prediction.jpg';
+import ecommerce from '../assets/Images/Ecommerce_Web.jpg';
+import event from '../assets/Images/Event.jpg';
+import linkedin from '../assets/Images/Linkedin.jpg';
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
-  { id: "02", label: "Skills", offset: -80, to: "skills" },
-  { id: "03", label: "About Me", offset: -80, to: "about"},
-  { id: "04", label: "Projects", offset: -100, to: "projects"},
-  { id: "05", label: "Certificates", offset: -100, to: "certificates"},
-  { id: "06", label: "Contact", offset: -80, to: "contact"},
+  { id: "02", label: "About Me", offset: -80, to: "about" },
+  { id: "03", label: "Education", offset: -80, to: "education"},
+  { id: "04", label: "Skills", offset: -80, to: "skills"},
+  { id: "05", label: "Projects", offset: -100, to: "projects"},
+  { id: "06", label: "Certificates", offset: -100, to: "certificates"},
+  { id: "07", label: "Internships", offset: -80, to: "internships"},
+  { id: "08", label: "Contact", offset: -80, to: "contact"},
 ];
 
 export const STATS = [
@@ -228,12 +230,39 @@ export const ABOUT_ME = {
   instagram: "yes"
 };
 
+export const EDUCATION = [
+  {
+    id: "01",
+    main: "COLLEGE",
+    title: "College of Engineering, Guindy — Chennai",
+    course: " M.Sc. (Integrated) - Computer Science",
+    year: "2022 - 2027",
+    cgpa: ""
+  },
+  {
+    id: "02",
+    main: "HSC",
+    title: " Nazareth Matriculation Higher Secondary School — Avadi",
+    course: "HSC in Tamil Nadu State Board Education",
+    year: "2020 - 2022",
+    percentage: "95.33%"
+  },
+  {
+    id: "03",
+    main: "SSLC",
+    title: "Holy Immanuel Matriculation School — Avadi",
+    course: " SSLC in Tamil Nadu State Board Education",
+    year: "2015 - 2020",
+    percentage: "90%"
+  },
+];
+
 export const PROJECTS = [
   {
     id: "01",
     title:
     "Travel Diary Calendar",
-    image: Image_1,
+    image: travel,
     tags: ["React JS", "Node JS", "Express JS", "MongoDB"],
     link: "https://github.com/Rajeshwari1403/Travel_Diary_Calendar",
     deployed_link: "",
@@ -242,7 +271,7 @@ export const PROJECTS = [
     id: "02",
     title:
     "Weather App",
-    image: Image_2,
+    image: weather,
     tags: ["React JS", "Weather API"],
     link: "https://github.com/Rajeshwari1403/WeatherAPI",
     deployed_link: "https://weather-api-phi-lyart.vercel.app/",
@@ -251,7 +280,7 @@ export const PROJECTS = [
     id: "03",
     title:
     "Ecommerce Website",
-    image: Image_3,
+    image: ecommerce,
     tags: ["React JS", "Node JS", "Express JS", "MongoDB"],
     link: "https://github.com/Rajeshwari1403/Ecommerce_web",
     deployed_link: "",
@@ -260,7 +289,7 @@ export const PROJECTS = [
     id: "04",
     title:
     "Event Management Application",
-    image: Image_4,
+    image: event,
     tags: ["HTML", "CSS", "MySql"],
     link: "https://github.com/Rajeshwari1403/Restro",
     deployed_link: "",
@@ -269,7 +298,7 @@ export const PROJECTS = [
     id: "05",
     title:
     "Linkedin Clone",
-    image: Image_5,
+    image: linkedin,
     tags: ["React", "Node JS", "Express JS", "MongoDB"],
     link: "https://github.com/Rajeshwari1403/LinkedIn-Clone",
     deployed_link: "",
@@ -278,9 +307,37 @@ export const PROJECTS = [
     id: "06",
     title:
     "Football Match Prediction (Py)",
-    image: Image_6,
+    image: football,
     tags: ["Python", "ML"],
     link: "https://github.com/Rajeshwari1403/ML-Football-Match-Prediction",
     deployed_link: "",
   },
+];
+
+export const INTERNSHIPS_TABS = [
+  { id: "01", label: "CaratLane Trading Private Limited", value: "CaratLane Trading Private Limited" },
+  { id: "02", label: "Alpixn Technologies Private Limited", value: "Alpixn Technologies Private Limited" },
+];
+
+export const INTERNSHIPS = [
+  {
+    id: "01",
+    icon: "weather",
+    ex: "CaratLane Trading Private Limited",
+    title: "CaratLane Trading Private Limited - OnSite",
+    role: "Quality Engineers",
+    Project_Title: "",
+    description: " Working on based post-sales project; responsible for test case design, bug tracking, and QA validation.",
+    duration: "July 2025 - Present"
+  },
+  {
+    id: "02",
+    icon: "travel",
+    ex: "Alpixn Technologies Private Limited",
+    title: "Alpixn Technologies Private Limited - Remote",
+    role: "Full Stack Developer",
+    Project_Title: "AI App Builder",
+    description: "Contributed to end-to-end feature development and debugging across frontend (React) and backend (Node.js) stacks",
+    duration: "June 2025"
+  }
 ];

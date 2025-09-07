@@ -6,16 +6,20 @@ import AboutMe from './section/AboutMe'
 import MyProjects from './section/MyProjects'
 import ContactMe from './section/ContactMe'
 import Certificates from './section/Certificates'
+import Education from './section/Education'
+import Internships from './section/Internships'
 
 const App = () => {
   return (
     <div className='mb-40'>
       <NavBar />
       <Hero />
-      <TechProficiency />
       <AboutMe />
+      <Education />
+      <TechProficiency />
       <MyProjects />
       <Certificates />
+      <Internships />
       <ContactMe />
     </div>
   )

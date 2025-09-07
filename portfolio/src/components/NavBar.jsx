@@ -81,7 +81,7 @@ const NavBar = () => {
           ))}
         </ul>
         {/*Hire Me Button*/}
-        <button className='hidden md:block h-12 text-[15px] font-medium text-white bg-primary rounded-full 
+        <button id='contact' className='hidden md:block h-12 text-[15px] font-medium text-white bg-primary rounded-full 
                            px-9 transition-transform duration-300 ease-in-out hover:scale-105'>Hire Me</button>
       </div>
     </nav>
