@@ -294,7 +294,10 @@ export const ABOUT_ME = {
   email: "rajeshwari.cmc@gmail.com",
   phone: "+91 90809 15451",
   linkedin: "https://www.linkedin.com/in/rajeshwari-r-cmc",
-  instagram: "https://www.instagram.com/it_z_rathi05/"
+  instagram: "https://www.instagram.com/it_z_rathi05/",
+  github: "https://github.com/Rajeshwari1403",
+  leetcode: "https://leetcode.com/u/rajeshwariravi2005/",
+  geeksforgeeks: "https://www.geeksforgeeks.org/user/rajeshwb6d9/",
 };
 
 export const EDUCATION = [
@@ -393,7 +396,7 @@ export const INTERNSHIPS = [
     image: caratlane,
     ex: "CaratLane Trading Private Limited",
     title: "CaratLane Trading Private Limited - OnSite",
-    role: "Quality Engineers",
+    role: "Quality Engineer",
     Project_Title: "",
     description: " Working on based post-sales project; responsible for test case design, bug tracking, and QA validation.",
     duration: "July 2025 - Present"

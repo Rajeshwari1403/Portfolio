@@ -8,10 +8,11 @@ import ContactMe from './section/ContactMe'
 import Certificates from './section/Certificates'
 import Education from './section/Education'
 import Internships from './section/Internships'
+import Footer from './section/Footer'
 
 const App = () => {
   return (
-    <div className='mb-40'>
+    <div>
       <NavBar />
       <Hero />
       <AboutMe />
@@ -21,6 +22,7 @@ const App = () => {
       <Certificates />
       <Internships />
       <ContactMe />
+      <Footer />
     </div>
   )
 }

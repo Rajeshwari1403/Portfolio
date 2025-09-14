@@ -54,6 +54,10 @@
     @apply absolute top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full
     shadow-lg;
   }
+  .input-box {
+    @apply bg-accent rounded-2xl border border-blue-100 px-4 py-3 placeholder:text-blue-400/80
+    placeholder:text-sm mb-5 focus:outline-none focus:border-primary
+  }
 }
 
 html {

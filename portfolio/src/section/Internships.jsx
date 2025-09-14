@@ -33,7 +33,7 @@ const Internships = () => {
         activeTab={activeTab}
         onChange={handleTabValue}
         />
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 min-h-[430px] mx-auto max-w-3xl'>
+        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 min-h-[380px] mx-auto max-w-3xl'>
         {tabData.map((skill, index) => (
           <motion.div key={skill.id}
           initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import icon_1 from '../assets/Images/icon.jpg'
-import I2 from '../assets/Images/React.png'
+import I2 from '../assets/Images/backend.png'
+import I1 from '../assets/Images/javascript.png'
+import I3 from '../assets/Images/program.png'
+import I4 from '../assets/Images/frontend.png'
 import { STATS } from '../utils/data'
 import StatInfoCard from '../components/StatInforCard'
 
@@ -30,8 +33,15 @@ const Hero = () => {
             I'm passionate about improving my skills
           </p>
           <div className='flex justify-center lg:justify-start gap-4 md:gap-8 mt-6'>
-            <button className='flex-1 md:flex-none action-btn-outline btn-scale-anim'>View My Work</button>
-            
+            <button
+              onClick={() => {
+                const element = document.getElementById('about');
+                if (element) element.scrollIntoView({ behavior: 'auto' });
+              }}
+              className='flex-1 md:flex-none action-btn-outline btn-scale-anim'
+            >
+              View My work
+            </button>
             {/* Instead of direct link, show popup */}
             <button 
               onClick={handleDownloadClick} 
@@ -45,10 +55,10 @@ const Hero = () => {
         {/* Profile Image Section */}
         <div className='w-[250px] md:w-[320px] h-[280px] md:h-[358px] bg-blue-100/100 rounded-3xl relative order-1 lg:order-2'>
           <img src={icon_1} alt='Profile_Pic' className='profile-pic' />
-          <img src={icon_1} alt='Icon 1' className='icon-img -left-10 bottom-20 rotate-[1.75deg]' />
+          <img src={I1} alt='Icon 1' className='icon-img -left-10 bottom-20 rotate-[1.75deg]' />
           <img src={I2} alt='Icon 2' className='icon-img left-5 md:left-10 -bottom-12 rotate-[2.75deg]'/>
-          <img src={icon_1} alt='Icon 3' className='icon-img left-[110px] md:left-[170px] -bottom-16 rotate-[3.75deg]'/>
-          <img src={icon_1} alt='Icon 4' className='icon-img left-[200px] md:left-[285px] -bottom-9 md:bottom-10 rotate-[4.75deg]'/>
+          <img src={I3} alt='Icon 3' className='icon-img left-[110px] md:left-[170px] -bottom-16 rotate-[3.75deg]'/>
+          <img src={I4} alt='Icon 4' className='icon-img left-[200px] md:left-[285px] -bottom-9 md:bottom-10 rotate-[4.75deg]'/>
         </div>
       </div>
 
