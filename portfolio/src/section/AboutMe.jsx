@@ -1,6 +1,6 @@
 import React from 'react';
 import { ABOUT_ME } from '../utils/data';
-import profile_pic from '../assets/Images/Image1.jpg';
+import profile_pic from '../assets/Images/Image2.jpg';
 
 const AboutMe = () => {
   return (
