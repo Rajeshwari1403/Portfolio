@@ -2,18 +2,19 @@ import React from 'react'
 
 const InternshipsCard = ({icon, JobTitle, JobRole, Project, Description, Duration}) => {
   return (
-    <div className='mx-auto max-w-7xl bg-primary rounded-2xl border border-[#fce8d4] p-4'>
+    <div className='mx-auto max-w-7xl bg-primary rounded-2xl border border-[#fce8d4] p-4 h-[150px]'>
       <div className='flex gap-3'>
-        <div className='w-10 h-10 flex items-center justify-center bg-gradient-to-b from-[#fdeddd] to-[#ffffff] rounded-[7px]'>{icon}</div>
+        <img src={icon} className='w-14 h-14 md:h-14 object-cover' />
 
         <div className='flex-1'>
           <div className='flex items-center justify-between'>
-            <h2>{JobTitle}</h2>
-            <p className='text-[13px] text-white font-medium'>{JobRole}</p>
-            <p className='text-xs text-secondary font-medium'>{Project}</p>
+            <h2 className='text-[13px] text-white font-medium'>{JobTitle}</h2>
+            <p className='text-[13px] text-white font-medium'>{Duration}</p>
           </div>
 
-          <div className='w-full bg-background rounded-md h-[5px] relative mt-2'></div>
+          <div className='w-full bg-background rounded-md h-[1px] relative mt-2'></div>
+          <p className='text-[13px] text-white font-medium mt-4'>Role: {JobRole}</p>
+          <p className='text-background text-xs font-medium mt-2'>Project Name: {Project}</p>
         </div>
       </div>
     

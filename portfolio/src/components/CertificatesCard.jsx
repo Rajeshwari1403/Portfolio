@@ -8,7 +8,7 @@ const CertificatesCard = ({icon, courseName, organization, description, link}) =
 
         <div className='flex-1'>
           <div className='flex items-center justify-between'>
-            <p className='text-[13px] text-white font-medium'>{courseName}</p>
+            <p className='text-[13px] text-white font-medium'>{courseName} ({organization})</p>
              {/* View Certificate Link */}
             {link && (
               <a 
@@ -22,10 +22,10 @@ const CertificatesCard = ({icon, courseName, organization, description, link}) =
             )}
           </div>
 
-          <div className='w-full bg-background rounded-md h-[5px] relative mt-2'></div>
+          <div className='w-full bg-background rounded-md h-[1px] relative mt-2'></div>
         </div>
       </div>
-    
+
      <p className='text-xs text-accent text-justify leading-5 mt-2'>{description}</p>
     </div>
   )

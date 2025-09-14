@@ -8,7 +8,7 @@ import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const ContactMe = () => {
   return (
-    <section id='contact' className='mx-auto max-w-7xl'>
+    <section id='contact' className='mx-auto max-w-7xl scroll-mt-20'>
       <div className='container mx-auto p-10'>
         <div className='w-full lg:w-[60vw] mx-auto'>
           <h4 className='sec-title'>Contact Me</h4>

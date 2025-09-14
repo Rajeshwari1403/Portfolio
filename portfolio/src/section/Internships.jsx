@@ -18,7 +18,7 @@ const Internships = () => {
     setActiveTab(value);
   }
   return (
-    <section id='internships' className='bg-background mt-20'>
+    <section id='internships' className='bg-background mt-20 scroll-mt-20 scroll-mt-20'>
       <div className='container mx-auto p-10'>
         <div className='w-full lg:w-[60vw] mx-auto'>
           <h4 className='sec-title'>
@@ -41,7 +41,7 @@ const Internships = () => {
           transition={{ duration: 0.4, delay: index * 0.1 }}
           >
             <InternshipsCard 
-               icon={<skill.icon className='w-6 h-6 text-primary' />}
+               icon={skill.image}
                JobTitle = {skill.title}
                JobRole = {skill.role}
                Project = {skill.Project_Title}

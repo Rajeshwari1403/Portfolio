@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import icon_1 from '../assets/Images/icon.jpg'
+import I2 from '../assets/Images/React.png'
 import { STATS } from '../utils/data'
 import StatInfoCard from '../components/StatInforCard'
 
@@ -18,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section id='hero' className='container mx-auto max-w-7xl px-8'>
+    <section id='hero' className='container mx-auto max-w-7xl px-8 scroll-mt-28'>
       <div className='flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]'>
         <div className='order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0'>
           <h3 className='text-xl lg:text-2xl font-medium text-black'>👋 Hi, I'm Rajeshwari R</h3>
@@ -45,7 +46,7 @@ const Hero = () => {
         <div className='w-[250px] md:w-[320px] h-[280px] md:h-[358px] bg-blue-100/100 rounded-3xl relative order-1 lg:order-2'>
           <img src={icon_1} alt='Profile_Pic' className='profile-pic' />
           <img src={icon_1} alt='Icon 1' className='icon-img -left-10 bottom-20 rotate-[1.75deg]' />
-          <img src={icon_1} alt='Icon 2' className='icon-img left-5 md:left-10 -bottom-12 rotate-[2.75deg]'/>
+          <img src={I2} alt='Icon 2' className='icon-img left-5 md:left-10 -bottom-12 rotate-[2.75deg]'/>
           <img src={icon_1} alt='Icon 3' className='icon-img left-[110px] md:left-[170px] -bottom-16 rotate-[3.75deg]'/>
           <img src={icon_1} alt='Icon 4' className='icon-img left-[200px] md:left-[285px] -bottom-9 md:bottom-10 rotate-[4.75deg]'/>
         </div>

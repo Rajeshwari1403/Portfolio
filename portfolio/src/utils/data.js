@@ -8,8 +8,21 @@ import {
   FaBrain,
   FaProjectDiagram,
 } from 'react-icons/fa';
+import MicrosoftExcel from '../assets/Images/Excel.png';
+import { FaBook } from 'react-icons/fa';
 import {BiLogoJavascript} from "react-icons/bi";
-import {SiTailwindcss, SiMongodb, SiExpress, SiGithub, SiMysql, SiPython, SiPostman, SiFigma} from "react-icons/si";
+import { MdHome } from 'react-icons/md';
+import { SiTailwindcss, 
+         SiMongodb, 
+         SiExpress, 
+         SiGithub, 
+         SiMysql, SiPython, 
+         SiPostman, 
+         SiFigma, 
+         SiLeetcode, 
+         SiGeeksforgeeks,
+         SiApache
+        } from "react-icons/si";
 import {
   VscVscode,
   VscCommentUnresolved,
@@ -25,15 +38,18 @@ import ecommerce from '../assets/Images/Ecommerce_Web.jpg';
 import event from '../assets/Images/Event.jpg';
 import linkedin from '../assets/Images/Linkedin.jpg';
 
+import caratlane from '../assets/Images/caratlane.png';
+import alpixn from '../assets/Images/alpixn.png';
+
 export const MENU_LINKS = [
-  { id: "01", label: "Home", offset: -100, to: "hero" },
-  { id: "02", label: "About Me", offset: -80, to: "about" },
-  { id: "03", label: "Education", offset: -80, to: "education"},
-  { id: "04", label: "Skills", offset: -80, to: "skills"},
-  { id: "05", label: "Projects", offset: -100, to: "projects"},
-  { id: "06", label: "Certificates", offset: -100, to: "certificates"},
-  { id: "07", label: "Internships", offset: -80, to: "internships"},
-  { id: "08", label: "Contact", offset: -80, to: "contact"},
+  { id: "01", label: "Home", offset: -70, to: "hero" },
+  { id: "02", label: "About Me", offset: -70, to: "about" },
+  { id: "03", label: "Education", offset: -70, to: "education"},
+  { id: "04", label: "Skills", offset: -70, to: "skills"},
+  { id: "05", label: "Projects", offset: -70, to: "projects"},
+  { id: "06", label: "Certificates", offset: -70, to: "certificates"},
+  { id: "07", label: "Internships", offset: -70, to: "internships"},
+  { id: "08", label: "Contact", offset: -70, to: "contact"},
 ];
 
 export const STATS = [
@@ -143,7 +159,56 @@ export const SKILLS = [
     skill: "Git",
     type: "tools",
     description: "Experienced in Git, managing source code versions and collaborating with teams through branching and merging strategies.",
-  }
+  },
+  {
+    id: "14",
+    icon: SiFigma,
+    skill: "Figma",
+    type: "tools",
+    description: "Expert in Visual Studio Code, utilizing its powerful features and extensions to enhance coding productivity and efficiency.",
+  },
+  {
+    id: "15",
+    icon: MdHome,
+    skill: "Microsoft Excel",
+    type: "tools",
+    description: "Expert in Visual Studio Code, utilizing its powerful features and extensions to enhance coding productivity and efficiency.",
+  },
+  {
+    id: "16",
+    icon: MdHome,
+    skill: "Eclipse IDE",
+    type: "tools",
+    description: "Skilled in Postman, effectively testing and debugging APIs to ensure reliable and efficient backend services.",
+  },
+  {
+    id: "17",
+    icon: SiApache,
+    skill: "Xampp",
+    type: "tools",
+    description: "Skilled in Postman, effectively testing and debugging APIs to ensure reliable and efficient backend services.",
+  },
+  {
+    id: "18",
+    icon: MdHome,
+    skill: "Xampp",
+    type: "tools",
+    description: "Skilled in Postman, effectively testing and debugging APIs to ensure reliable and efficient backend services.",
+  },
+  {
+    id: "19",
+    icon: FaBook,
+    skill: "Problem Solving",
+    type: "skills",
+    description: "Skilled in Postman, effectively testing and debugging APIs to ensure reliable and efficient backend services.",
+  },
+  {
+    id: "20",
+    icon: FaBook,
+    skill: "Self Learning",
+    type: "skills",
+    description: "Skilled in Postman, effectively testing and debugging APIs to ensure reliable and efficient backend services.",
+  },
 ];
 
 export const CERTIFICATES_TABS = [
@@ -219,15 +284,17 @@ export const ABOUT_ME = {
   content: `Dedicated Computer Science student with experience in full-stack and backend development. Built academic projects using
             Python, MERN stack, and MySQL with focus on responsiveness and clean UI. Curious how software enables real-time systems, simulations, and data handling.`,
   socialLinks: [
-    { id: "01", label: "Linkedin", icon: FaLinkedin, link: "https://www.linkedin.com/in/rajesh-kumar-2b0b98210/" },
-    { id: "02", label: "Github", icon: SiGithub, link: "#"},
-    { id: "03", label: "Instagram", icon: FaInstagram, link: "https://www.instagram.com/rajesh_233/"},
+    { id: "01", label: "Linkedin", icon: FaLinkedin, link: "https://www.linkedin.com/in/rajeshwari-r-cmc" },
+    { id: "02", label: "Github", icon: SiGithub, link: "https://github.com/Rajeshwari1403"},
+    { id: "03", label: "Instagram", icon: FaInstagram, link: "https://www.instagram.com/it_z_rathi05/"},
+    { id: "04", label: "Leetcode", icon: SiLeetcode, link: "https://leetcode.com/u/rajeshwariravi2005/"},
+    { id: "05", label: "GeeksforGeeks", icon: SiGeeksforgeeks, link: "https://www.geeksforgeeks.org/user/rajeshwb6d9/"}
   ],
 
   email: "rajeshwari.cmc@gmail.com",
   phone: "+91 90809 15451",
   linkedin: "https://www.linkedin.com/in/rajeshwari-r-cmc",
-  instagram: "yes"
+  instagram: "https://www.instagram.com/it_z_rathi05/"
 };
 
 export const EDUCATION = [
@@ -315,14 +382,15 @@ export const PROJECTS = [
 ];
 
 export const INTERNSHIPS_TABS = [
-  { id: "01", label: "CaratLane Trading Private Limited", value: "CaratLane Trading Private Limited" },
-  { id: "02", label: "Alpixn Technologies Private Limited", value: "Alpixn Technologies Private Limited" },
+  { id: "01", label: "All", value: "all" },
+  { id: "02", label: "CaratLane Trading Private Limited", value: "CaratLane Trading Private Limited" },
+  { id: "03", label: "Alpixn Technologies Private Limited", value: "Alpixn Technologies Private Limited" },
 ];
 
 export const INTERNSHIPS = [
   {
     id: "01",
-    icon: "weather",
+    image: caratlane,
     ex: "CaratLane Trading Private Limited",
     title: "CaratLane Trading Private Limited - OnSite",
     role: "Quality Engineers",
@@ -332,7 +400,7 @@ export const INTERNSHIPS = [
   },
   {
     id: "02",
-    icon: "travel",
+    image: alpixn,
     ex: "Alpixn Technologies Private Limited",
     title: "Alpixn Technologies Private Limited - Remote",
     role: "Full Stack Developer",

@@ -4,7 +4,7 @@ import profile_pic from '../assets/Images/Image1.jpg';
 
 const AboutMe = () => {
   return (
-    <section id='about' className='container mx-auto px-8 py-16 mx-auto bg-background mt-14'>
+    <section id='about' className='container mx-auto px-8 py-16 mx-auto bg-background mt-14 scroll-mt-20'>
       <div className='max-w-7xl items-center mx-auto'>
       <h4 className='block lg:hidden w-[200px] sec-title text-left mb-16'>About Me</h4>
       <div className='flex flex-col lg:flex-row gap-16 items-start justify-between'>
@@ -19,7 +19,13 @@ const AboutMe = () => {
 
           <div className='flex gap-4 mt-6'>
             {ABOUT_ME.socialLinks.map((item) => (
-              <a key={item.label} className='cursor-pointer group'>
+              <a 
+                key={item.label}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer" 
+                className='cursor-pointer group'
+              >
                 <item.icon className='text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[2px] group-hover:text-primary' />
               </a>
             ))}

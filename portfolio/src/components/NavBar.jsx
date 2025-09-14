@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MENU_LINKS } from '../utils/data';
-import LOGO from '../assets/Images/portfolio.jpg';
+import LOGO from '../assets/Images/portfolio.png';
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
@@ -65,24 +65,38 @@ const NavBar = () => {
          
         {/*Navigation Links*/}
         <ul className={`${isOpen ? "flex" : "hidden"} menu-wrapper`}>
-          {MENU_LINKS.map((item) => (
-            <li key={item.id}>
-            <Link 
-            activeClass = "active" 
-            to={item.to} 
-            smooth 
-            spy 
-            offset={item.offset}
-            className='menu-item'
-            >
-              {item.label}
-            </Link>
-            </li>
-          ))}
-        </ul>
+  {MENU_LINKS.map((item) => (
+    <li key={item.id}>
+      <span
+        className="menu-item cursor-pointer"
+        onClick={() => {
+          const element = document.getElementById(item.to);
+          if (element) element.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        {item.label}
+      </span>
+    </li>
+  ))}
+</ul>
+
         {/*Hire Me Button*/}
-        <button id='contact' className='hidden md:block h-12 text-[15px] font-medium text-white bg-primary rounded-full 
-                           px-9 transition-transform duration-300 ease-in-out hover:scale-105'>Hire Me</button>
+        {/*<button
+          onClick={() => {
+            const element = document.getElementById('contact');
+            if (element) element.scrollIntoView({ behavior: 'auto' });
+          }}
+          className='hidden md:block h-12 text-[15px] font-medium text-white bg-primary rounded-full 
+                    px-9 transition-transform duration-300 ease-in-out hover:scale-105'
+        >
+          Hire Me
+        </button>*/}
+        <button className='hidden md:block h-12 text-[15px] font-medium text-white bg-primary rounded-full 
+                    px-9 transition-transform duration-300 ease-in-out hover:scale-105'
+        >
+          Hire Me
+        </button>
+
       </div>
     </nav>
   )

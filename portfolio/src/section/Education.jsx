@@ -4,7 +4,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <section id='education' className='container mx-auto px-8 py-16 bg-white lg:mt-14'>
+    <section id='education' className='container mx-auto px-8 py-16 bg-white lg:mt-14 scroll-mt-20'>
       <div className='max-w-7xl mx-auto'>
         {/* Section title */}
         <h4 className='block lg:hidden w-[200px] sec-title text-left'>Education</h4>
