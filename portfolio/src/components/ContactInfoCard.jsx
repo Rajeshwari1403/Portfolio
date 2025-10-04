@@ -40,7 +40,7 @@ const ContactInfoCard = ({ icon, label, text, link, isCopyable }) => {
               </a>
             ) : (
               <>
-                <span className="block">{label}</span>
+                <span className="block group-hover:hidden">{label}</span>
                 <span className="absolute left-0 top-[-8px] opacity-0 group-hover:opacity-100 text-primary truncate max-w-xs">
                   {text}
                 </span>

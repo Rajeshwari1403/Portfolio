@@ -14,7 +14,10 @@ const InternshipsCard = ({icon, JobTitle, JobRole, Project, Description, Duratio
 
           <div className='w-full bg-background rounded-md h-[1px] relative mt-2'></div>
           <p className='text-[13px] text-white font-medium mt-4'>Role: {JobRole}</p>
-          <p className='text-background text-xs font-medium mt-2'>Project Name: {Project}</p>
+          <p className="text-xs font-medium mt-2 bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">
+            Project Name: <span className="text-white">{Project}</span>
+          </p>
+
         </div>
       </div>
     

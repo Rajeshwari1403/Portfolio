@@ -13,7 +13,7 @@ const Certificates = () => {
       setActiveTab("all");
       return;
     }
-    const updatedList = CERTIFICATES.filter((skill) => skill.name === value);
+    const updatedList = CERTIFICATES.filter((skill) => skill.category === value);
     setTabData(updatedList);
     setActiveTab(value);
   }
@@ -24,11 +24,10 @@ const Certificates = () => {
           <h4 className='sec-title'>
             Certificates
           </h4>
-          <p className='text text-center mt-4 leading-6'>Dedicated Computer Science student with experience in full
-                                                        stack and backend development. Built academic projects using
-                                                        Python, MERN stack, and MySQL with focus on responsiveness
-                                                        and clean UI. Curious how software enables real-time systems,
-                                                        simulations, and data handling
+          <p className='text text-center mt-4 leading-6'>A Computer Science student, possessing hands-on experience 
+                                                         with frontend, backend, and automation. I have completed courses in React, UI/UX, 
+                                                         Python, Postman, and Data Structures. I am looking into creating responsive 
+                                                         web apps, API integrations and artificial intelligence and automation processes.
           </p>
 
         </div>

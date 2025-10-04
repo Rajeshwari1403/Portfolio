@@ -76,13 +76,13 @@ const Hero = () => {
             <div className="flex justify-center gap-4">
               <button 
                 onClick={confirmDownload} 
-                className="bg-primary hover:bg-white hover:text-primary hover:border hover:border-primary hover:font-semibold hover:border-2 text-white px-4 py-2 rounded-lg"
+                className="bg-primary hover:bg-white hover:text-primary hover:border-2 hover:border-primary hover:font-semibold text-white px-4 py-2 rounded-lg"
               >
                 Yes
               </button>
               <button 
                 onClick={() => setShowConfirm(false)} 
-                className="bg-gray-300 hover:bg-black hover:text-white border border-black border-2 px-4 py-2 rounded-lg"
+                className="bg-gray-300 hover:bg-black hover:text-white border-2 border-black px-4 py-2 rounded-lg"
               >
                 No
               </button>
