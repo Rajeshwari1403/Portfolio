@@ -50,7 +50,8 @@ const Certificates = () => {
                courseName = {skill.name}
                organization = {skill.organization}
                description = {skill.description}
-               link = {skill.link} 
+               link = {skill.link}
+               tags = {skill.tags}
             />
           </motion.div>
         ))}
