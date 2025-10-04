@@ -24,11 +24,9 @@ const TechProficiency = () => {
           <h4 className='sec-title'>
             Technical Proficiency
           </h4>
-          <p className='text text-center mt-4 leading-6'>Dedicated Computer Science student with experience in full
-                                                        stack and backend development. Built academic projects using
-                                                        Python, MERN stack, and MySQL with focus on responsiveness
-                                                        and clean UI. Curious how software enables real-time systems,
-                                                        simulations, and data handling
+          <p className='text-sm text-center mt-4 leading-6'>Hands-on experience with frontend, backend, databases, and essential tools 
+                                                            like React, Node.js, MongoDB, Postman, and Figma. Focused on building 
+                                                            efficient, responsive applications and integrating APIs for real-world solutions.
           </p>
 
         </div>

@@ -144,7 +144,7 @@ export const SKILLS = [
     icon: VscCommentUnresolved,
     skill: "Postman",
     type: "tools",
-    description: "",
+    description: "Skilled in using Postman to test APIs and validate endpoints. Able to send requests, analyze responses, and debug issues effectively. Focused on ensuring smooth API communication for reliable backend and frontend integration.",
   },
   {
     id: "12",
@@ -193,7 +193,7 @@ export const SKILLS = [
     icon: FaBook,
     skill: "Self Learning",
     type: "skills",
-    description: "",
+    description: "Able to learn new technologies independently through online courses, documentation, and practice. Focused on building practical understanding by applying concepts to projects. Continuously improving skills to stay updated with modern tools and development practices.",
   },
 ];
 
@@ -239,16 +239,6 @@ export const CERTIFICATES = [
   },
   {
     id: "04",
-    icon: FaProjectDiagram,
-    name: "Data Structure",  
-    organization: "Great Learning",
-    description: "Mastered core data structures concepts for efficient algorithm implementation.",
-    link: "https://www.mygreatlearning.com/certificate/LNRHBUFZ",
-    tags: ["Queue", "Stack", "Trees", "Array", "Graphs", "Hashing", "Linked list"],
-    category: "dsa",
-  },
-  {
-    id: "05",
     icon: SiPostman,
     name: "Postman API Fundamentals",
     organization: "Postman",
@@ -258,17 +248,17 @@ export const CERTIFICATES = [
     category: "tools",
   },
   {
-    id: "06",
-    icon: FaBrain,
-    name: "Artificial Intelligence",
-    organization: "Infosys Springboard",
-    description: "Gained foundational knowledge in AI concepts, machine learning algorithms, and their practical applications.",
-    link: "",
-    tags: ["AI", "Machine Learning", "Problem-solving"],
-    category: "ai",
+    id: "05",
+    icon: FaProjectDiagram,
+    name: "Data Structure",  
+    organization: "Great Learning",
+    description: "Mastered core data structures concepts for efficient algorithm implementation.",
+    link: "https://www.mygreatlearning.com/certificate/LNRHBUFZ",
+    tags: ["Queue", "Stack", "Trees", "Array", "Graphs", "Hashing", "Linked list"],
+    category: "dsa",
   },
   {
-    id: "07",
+    id: "06",
     icon: SiPython,
     name: "Crash Course On Python",
     organization: "Coursera",
@@ -278,7 +268,7 @@ export const CERTIFICATES = [
     category: "automation"
   },
   {
-    id: "08",
+    id: "07",
     icon: SiPython,
     name: "Python OS Interaction",
     organization: "Coursera",
@@ -286,6 +276,16 @@ export const CERTIFICATES = [
     link: "https://www.coursera.org/account/accomplishments/verify/NJHOBY1SIQ3F",
     tags: ["Python", "Automation", "Operating Systems", "Shell Script", "Command-Line Interface"],
     category: "automation"
+  },
+  {
+    id: "08",
+    icon: FaBrain,
+    name: "Artificial Intelligence",
+    organization: "Infosys Springboard",
+    description: "Gained foundational knowledge in AI concepts, machine learning algorithms, and their practical applications.",
+    link: "",
+    tags: ["AI", "Machine Learning", "Data Science"],
+    category: "ai",
   },
 ];
 

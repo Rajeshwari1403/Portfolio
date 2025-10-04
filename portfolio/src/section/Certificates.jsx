@@ -24,10 +24,10 @@ const Certificates = () => {
           <h4 className='sec-title'>
             Certificates
           </h4>
-          <p className='text text-center mt-4 leading-6'>A Computer Science student, possessing hands-on experience 
-                                                         with frontend, backend, and automation. I have completed courses in React, UI/UX, 
-                                                         Python, Postman, and Data Structures. I am looking into creating responsive 
-                                                         web apps, API integrations and artificial intelligence and automation processes.
+          <p className='text-sm text-center mt-4 leading-6'>Obtained practical experience in frontend, backend, and automation 
+                                                         through courses on React, UI/UX, Python, Postman, and Data Structures. 
+                                                         Concentrated on creating responsive web apps, integrations with 
+                                                         APIs, and automation products using AI.
           </p>
 
         </div>

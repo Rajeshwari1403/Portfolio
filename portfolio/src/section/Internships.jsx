@@ -24,7 +24,11 @@ const Internships = () => {
           <h4 className='sec-title'>
             Internships
           </h4>
-          <p className='text text-center mt-4 leading-6'>PARA</p>
+          <p className='text-sm text-center mt-4 leading-6'>Acquired practical experience in full-stack development and quality assurance 
+                                                         as an intern, engaging with React, Node.js, testing, and automated testing. 
+                                                         Eager to construct responsive web applications, execute 
+                                                         API integrations, and design AI-driven results.
+          </p>
 
         </div>
 
