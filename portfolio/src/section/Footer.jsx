@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='bg-background text-xs text-primary text-center p-10'>
         <p className='font-semibold text-[12px]'>© 2025 Rajeshwari R. All rights reserved.</p>
-        <p className='mt-2 font-semibold text-[12px]'>Full-Stack & AI Enthusiast</p>
+        <p className='mt-2 font-semibold text-[12px]'>Full-Stack Developer | Quality Engineering | AI & Automation Enthusiast</p>
         <div className="flex justify-center gap-6 mt-3 text-2xl">
           <a href="https://www.linkedin.com/in/rajeshwari-r-cmc" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />

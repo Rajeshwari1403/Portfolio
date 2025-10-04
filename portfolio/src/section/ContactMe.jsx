@@ -14,7 +14,7 @@ const ContactMe = () => {
         <div className='w-full lg:w-[60vw] mx-auto'>
           <h4 className='sec-title'>Contact Me</h4>
           <p className='text-sm text-center mt-4 leading-6'>
-            A Developer with Hands-On-Experience
+            Open to tech collaborations and new opportunities — let's connect!
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>

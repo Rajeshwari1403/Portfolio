@@ -54,8 +54,8 @@ export const MENU_LINKS = [
 
 export const STATS = [
   //{ id: "01", count: "Student", label: "Years Of Experience" },
-  { id: "02", count: "10", label: "Certifications \nEarned" },
-  { id: "03", count: "08", label: "Projects \nCompleted" },
+  { id: "02", count: "08", label: "Certifications \nEarned" },
+  { id: "03", count: "06", label: "Projects \nCompleted" },
   //{ id: "04", count: "00", label: "Happily \n Clients"},
 ];
 
@@ -290,8 +290,7 @@ export const CERTIFICATES = [
 ];
 
 export const ABOUT_ME = {
-  content: `Dedicated Computer Science student with experience in full-stack and backend development. Built academic projects using
-            Python, MERN stack, and MySQL with focus on responsiveness and clean UI. Curious how software enables real-time systems, simulations, and data handling.`,
+  content: `I am a Computer Science student with a strong interest in full-stack development, Python-based automation, and AI technologies, with experience in Python, the MERN stack, and MySQL. I enjoy developing responsive, user-friendly applications and exploring how software can solve real-time problems, think intelligently, and build automated, data-driven systems. I also enjoy learning the latest technologies and applying them to real-world, scalable projects.`,
   socialLinks: [
     { id: "01", label: "Linkedin", icon: FaLinkedin, link: "https://www.linkedin.com/in/rajeshwari-r-cmc" },
     { id: "02", label: "Github", icon: SiGithub, link: "https://github.com/Rajeshwari1403"},

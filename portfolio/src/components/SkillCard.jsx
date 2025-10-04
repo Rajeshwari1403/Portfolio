@@ -12,7 +12,7 @@ const SkillCard = ({icon, skillName, description, progress}) => {
             <p className='text-xs text-secondary font-medium'>{progress}</p>
           </div>
 
-          <div className='w-full bg-background rounded-md h-[5px] relative mt-2'></div>
+          <div className='w-full bg-background rounded-md h-[1px] relative mt-2'></div>
           <div 
              className='bg-primary h-[5px] rounded-md'
              style={{ width: `${progress}%` }}
