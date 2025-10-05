@@ -2,8 +2,8 @@
   "name": "portfolio-fullstack",
   "version": "1.0.0",
   "scripts": {
-    "install": "npm install --prefix frontend && npm install --prefix backend",
-    "build": "npm run build --prefix frontend",
+    "install": "npm install --prefix portfolio && npm install --prefix backend",
+    "build": "npm run build --prefix portfolio",
     "start": "npm start --prefix backend"
   }
 }
