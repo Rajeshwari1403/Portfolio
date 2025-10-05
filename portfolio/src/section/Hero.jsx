@@ -16,11 +16,33 @@ const Hero = () => {
     setShowConfirm(true); // show popup
   };
 
-  const confirmDownload = () => {
-    setShowConfirm(false);
-    // trigger the actual download
-    window.location.href = `${API_URL}/download-resume`;
-  };
+  const confirmDownload = async () => {
+  setShowConfirm(false);
+
+  try {
+    const response = await fetch(`${API_URL}/download-resume`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf",
+      },
+    });
+
+    if (!response.ok) throw new Error("Download failed");
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Rajeshwari_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(url);
+  } catch (err) {
+    console.error("Download error:", err);
+  }
+};
+
 
   return (
     <section id='hero' className='container mx-auto max-w-7xl px-8 scroll-mt-28'>

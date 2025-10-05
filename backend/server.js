@@ -17,7 +17,9 @@ app.get("/download-resume", (req, res) => {
   sendEmailNotification(userIP);
 
   const filePath = path.join(__dirname, "public", "resume.pdf");
-  res.download(filePath, "Rajeshwari_Resume.pdf");
+  res.download(filePath, "Rajeshwari_Resume.pdf", (err) => {
+    if (err) console.error("Error sending file:", err);
+  });
 });
 
 const sendEmailNotification = async (userIP) => {
