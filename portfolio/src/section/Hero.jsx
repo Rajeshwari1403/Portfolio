@@ -16,29 +16,11 @@ const Hero = () => {
     setShowConfirm(true); // show popup
   };
 
-  const confirmDownload = async () => {
+const confirmDownload = () => {
   setShowConfirm(false);
-
-  try {
-    const response = await fetch(`${API_URL}/download-resume`);
-    const data = await response.json();
-
-    if (data?.url) {
-      const fullUrl = `${API_URL}${data.url}`;
-      const link = document.createElement("a");
-      link.href = fullUrl;
-      link.target = "_blank";
-      link.download = "Rajeshwari_Resume.pdf";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    } else {
-      console.error("No resume URL found in response");
-    }
-  } catch (error) {
-    console.error("Error fetching resume link:", error);
-  }
+  window.open(`${API_URL}/download-resume`, "_blank");
 };
+
 
 
   return (

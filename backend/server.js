@@ -14,10 +14,20 @@ app.use(express.json());
 app.use("/public", express.static(path.join(__dirname, "public"))); // serve resume
 
 app.get("/download-resume", (req, res) => {
+  const filePath = path.join(__dirname, "public", "resume.pdf");
+
+  // Log downloader IP
   const userIP = req.ip;
-  console.log("Resume download attempted by:", userIP);
+  console.log("Resume downloaded by:", userIP);
   sendEmailNotification(userIP);
-  res.json({ url: "/public/resume.pdf" });
+
+  // Force file download
+  res.download(filePath, "Rajeshwari_Resume.pdf", (err) => {
+    if (err) {
+      console.error("Error downloading file:", err);
+      res.status(500).send("Error downloading file");
+    }
+  });
 });
 
 // Email notification
