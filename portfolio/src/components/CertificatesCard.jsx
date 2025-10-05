@@ -2,7 +2,7 @@ import React from 'react'
 
 const CertificatesCard = ({ icon, courseName, organization, description, link, tags = [] }) => {
   return (
-    <div className='mx-auto max-w-7xl h-[180px] p-4 bg-primary rounded-2xl border border-[#fce8d4] hover:shadow-lg hover:scale-[1.01] transition-transform duration-200'>
+    <div className='mx-auto max-w-7xl p-4 bg-primary rounded-2xl border border-[#fce8d4] hover:shadow-lg hover:scale-[1.01] transition-transform duration-200'>
       <div className='flex gap-3'>
         {/* Icon */}
         <div className='w-10 h-10 flex items-center justify-center bg-gradient-to-b from-[#fdeddd] to-[#ffffff] rounded-[7px]'>

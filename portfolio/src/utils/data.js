@@ -264,7 +264,7 @@ export const CERTIFICATES = [
     organization: "Coursera",
     description: "Learned Python programming fundamentals including syntax, data structures, and writing efficient scripts.",
     link: "https://www.coursera.org/account/accomplishments/verify/AUYPD55DCWE5",
-    tags: ["Python Programming", "Computer Programming", "Scripting", "Debugging", "Development Environment"],
+    tags: ["Python Programming", "Scripting", "Debugging", "Development Environment"],
     category: "automation"
   },
   {

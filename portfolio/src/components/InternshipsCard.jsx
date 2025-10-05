@@ -2,7 +2,7 @@ import React from 'react'
 
 const InternshipsCard = ({icon, JobTitle, JobRole, Project, Description, Duration}) => {
   return (
-    <div className='mx-auto max-w-7xl bg-primary rounded-2xl border border-[#fce8d4] p-4 h-[170px]'>
+    <div className='mx-auto max-w-7xl bg-primary rounded-2xl border border-[#fce8d4] p-4'>
       <div className='flex gap-3'>
         <img src={icon} className='w-14 h-14 md:h-14 object-cover' />
 
