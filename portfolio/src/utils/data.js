@@ -33,7 +33,7 @@ import { FaGitAlt, FaDribbble } from 'react-icons/fa';
 
 import travel from '../assets/Images/Travel.jpg';
 import weather from '../assets/Images/Weather.png';
-import football from '../assets/Images/Football_Match_Prediction.jpg';
+import football from '../assets/Images/FootBall_Match_Prediction.jpg';
 import ecommerce from '../assets/Images/Ecommerce_Web.jpg';
 import event from '../assets/Images/Event.jpg';
 import linkedin from '../assets/Images/Linkedin.jpg';
