@@ -45,7 +45,7 @@ const sendEmailNotification = async (userIP) => {
 // ✅ Serve Frontend Build
 // ======================
 const __dirnameFull = path.resolve();
-app.use(express.static(path.join(__dirnameFull, "portfolio", "dist")));
+app.use(express.static(path.join(__dirnameFull, "..", "portfolio", "dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirnameFull, "portfolio", "dist", "index.html"));
