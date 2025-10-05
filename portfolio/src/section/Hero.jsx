@@ -16,18 +16,29 @@ const Hero = () => {
     setShowConfirm(true); // show popup
   };
 
-  const confirmDownload = () => {
+  const confirmDownload = async () => {
   setShowConfirm(false);
 
-  const link = document.createElement("a");
-  link.href = `${API_URL}/download-resume`;  // your backend download route
-  link.setAttribute("download", "Rajeshwari_Resume.pdf"); // for desktop
-  link.setAttribute("target", "_blank"); // ensures mobile opens PDF in new tab
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-};
+  try {
+    const response = await fetch(`${API_URL}/download-resume`);
+    const data = await response.json();
 
+    if (data?.url) {
+      const fullUrl = `${API_URL}${data.url}`;
+      const link = document.createElement("a");
+      link.href = fullUrl;
+      link.target = "_blank";
+      link.download = "Rajeshwari_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } else {
+      console.error("No resume URL found in response");
+    }
+  } catch (error) {
+    console.error("Error fetching resume link:", error);
+  }
+};
 
 
   return (

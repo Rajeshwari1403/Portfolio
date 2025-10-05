@@ -17,8 +17,6 @@ app.get("/download-resume", (req, res) => {
   const userIP = req.ip;
   console.log("Resume download attempted by:", userIP);
   sendEmailNotification(userIP);
-
-  // On mobile, let frontend open via /public/resume.pdf
   res.json({ url: "/public/resume.pdf" });
 });
 
