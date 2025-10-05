@@ -36,7 +36,7 @@ import weather from '../assets/Images/Weather.png';
 import football from '../assets/Images/FootBall_Match_Prediction.jpg';
 import ecommerce from '../assets/Images/Ecommerce_Web.jpg';
 import event from '../assets/Images/Event.jpg';
-import linkedin from '../assets/Images/Linkedin.jpg';
+import linkedin from '../assets/Images/LinkedIn.jpg';
 
 import caratlane from '../assets/Images/caratlane.png';
 import alpixn from '../assets/Images/alpixn.png';
