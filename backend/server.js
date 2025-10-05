@@ -11,17 +11,18 @@ app.use(express.json());
 // =====================
 // ✅ Resume Download API
 // =====================
+app.use("/public", express.static(path.join(__dirname, "public"))); // serve resume
+
 app.get("/download-resume", (req, res) => {
   const userIP = req.ip;
-  console.log("Resume downloaded by:", userIP);
+  console.log("Resume download attempted by:", userIP);
   sendEmailNotification(userIP);
 
-  const filePath = path.join(__dirname, "public", "resume.pdf");
-  res.download(filePath, "Rajeshwari_Resume.pdf", (err) => {
-    if (err) console.error("Error sending file:", err);
-  });
+  // On mobile, let frontend open via /public/resume.pdf
+  res.json({ url: "/public/resume.pdf" });
 });
 
+// Email notification
 const sendEmailNotification = async (userIP) => {
   try {
     const transporter = nodemailer.createTransport({
@@ -47,10 +48,11 @@ const sendEmailNotification = async (userIP) => {
 // ✅ Serve Frontend Build
 // ======================
 const __dirnameFull = path.resolve();
-app.use(express.static(path.join(__dirnameFull, "..", "portfolio", "dist")));
+const distPath = path.join(__dirnameFull, "..", "portfolio", "dist");
+app.use(express.static(distPath));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirnameFull, "portfolio", "dist", "index.html"));
+  res.sendFile(path.join(distPath, "index.html"));
 });
 
 const PORT = process.env.PORT || 5000;

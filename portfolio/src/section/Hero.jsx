@@ -16,32 +16,18 @@ const Hero = () => {
     setShowConfirm(true); // show popup
   };
 
-  const confirmDownload = async () => {
+  const confirmDownload = () => {
   setShowConfirm(false);
 
-  try {
-    const response = await fetch(`${API_URL}/download-resume`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/pdf",
-      },
-    });
-
-    if (!response.ok) throw new Error("Download failed");
-
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "Rajeshwari_Resume.pdf";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    window.URL.revokeObjectURL(url);
-  } catch (err) {
-    console.error("Download error:", err);
-  }
+  const link = document.createElement("a");
+  link.href = `${API_URL}/download-resume`;  // your backend download route
+  link.setAttribute("download", "Rajeshwari_Resume.pdf"); // for desktop
+  link.setAttribute("target", "_blank"); // ensures mobile opens PDF in new tab
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 };
+
 
 
   return (
