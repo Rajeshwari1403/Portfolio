@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MENU_LINKS } from '../utils/data';
-import LOGO from '../assets/Images/portfolio.png';
-import { Link } from 'react-scroll';
+import LOGO from '../assets/Images/Portfolio.png';
 
 const NavBar = () => {
   const [isOpen, setisOpen] = useState(true);
