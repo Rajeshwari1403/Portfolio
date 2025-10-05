@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-fullstack",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd portfolio && npm install && npm run build"
+  }
+}
