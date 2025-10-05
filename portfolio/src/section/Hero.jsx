@@ -8,6 +8,7 @@ import { STATS } from '../utils/data'
 import StatInfoCard from '../components/StatInforCard'
 
 const Hero = () => {
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
   const [showConfirm, setShowConfirm] = useState(false);
 
   const handleDownloadClick = (e) => {
@@ -18,7 +19,7 @@ const Hero = () => {
   const confirmDownload = () => {
     setShowConfirm(false);
     // trigger the actual download
-    window.location.href = "http://localhost:5000/download-resume";
+    window.location.href = `${API_URL}/download-resume`;
   };
 
   return (
