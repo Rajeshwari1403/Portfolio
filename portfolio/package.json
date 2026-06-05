@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx --yes vite build",
-    "preview": "vite preview",
-    "lint": "eslint ."
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "embla-carousel": "^8.6.0",

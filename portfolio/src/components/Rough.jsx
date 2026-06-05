@@ -21,17 +21,17 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-primary mt-[-20px] mx-auto max-w-7xl rounded-lg scroll-mt-20 mb-4"
+      className="bg-primary mt-[-2px] mx-auto max-w-7xl rounded-lg scroll-mt-20"
     >
       <div className="container mx-auto px-8 md:px-10 py-10">
         {/* Mobile heading */}
-        <h4 className="block lg:hidden w-[200px] sec-title text-left mb-2 cursor-pointer">
+        <h4 className="block lg:hidden w-[200px] sec-title text-left mb-6 cursor-pointer">
           Contact Me
         </h4>
 
         <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between gap-6 lg:gap-20">
           {/* Left icon */}
-          <div className="flex justify-center lg:justify-start items-start w-[200px] md:w-[260px] mt-4 lg:mt-10 lg:ml-24">
+          <div className="flex justify-center lg:justify-start items-start w-[200px] md:w-[260px] mt-4 lg:mt-10 ml-20">
             <FaPhoneAlt className="w-24 h-24 md:w-32 md:h-32 text-accent" />
           </div>
 
@@ -123,6 +123,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <div className="w-full bg-background rounded-md h-[1px] relative mt-4"></div>
     </section>
   );
 };
